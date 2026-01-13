@@ -36,10 +36,10 @@ RUN echo 'server {' > /etc/nginx/conf.d/default.conf && \
     echo '    error_page 404 /index.html;' >> /etc/nginx/conf.d/default.conf && \
     echo '}' >> /etc/nginx/conf.d/default.conf
 
+RUN echo "nginx done"
+
 # Expose port 80
 EXPOSE 80
 
 # Start nginx
 CMD ["nginx", "-g", "daemon off;"]
-
-# Comment making sure that the workflow runs

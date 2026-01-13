@@ -4,10 +4,10 @@ import logo from './logo.svg';
 import './App.css';
 
 const colors = [
-  "red",
-  "white",
-  "green",
   "blue",
+  "white",
+  "red",
+  "green",
   "black",
 ];
 const Square = (props: any) => {
